@@ -12,9 +12,11 @@ class ApiService{
         // TODO: map to Country Model and add to list
         print(response.body);
       }
+      return response.body;
 
     }catch(err){
       debugPrint(err.toString());
     }
   }
 }
+

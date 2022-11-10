@@ -10,11 +10,13 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
+
   @override
   Widget build(BuildContext context) {
-    var countries = ()async => await ApiService().getCountries();
-    return Container(
-      child: Text(countries.toString())
+    ApiService().getCountries();
+
+    return Scaffold(
+      body: Container()
     );
   }
 }
